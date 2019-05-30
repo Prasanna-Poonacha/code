@@ -11,6 +11,7 @@
 4.	Organizing Dependencies
 -Using ES6 Imports & exports
 5.	Understanding Loaders
+-css loader , style loader, node-sass, sass-loader
 6.	Cache Busting & Plugins
 7.	Configure Webpack for Environments
 8.	More on Loaders/Plugins
