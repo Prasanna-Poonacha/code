@@ -2,10 +2,9 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    entry: "./src/index.js",
-    output: {
-        filename: "main.[contentHash].js",
-        path: path.resolve(__dirname, "dist")
+    entry: {
+        main: "./src/index.js",
+        vendor: "./src/vendor.js"
     },
     module: {
         rules: [
@@ -23,9 +22,9 @@ module.exports = {
             },
             {
                 test: /\.(svg|png|gif|jpg)$/,
-                use:{
-                    loader:'file-loader',
-                    options:{
+                use: {
+                    loader: 'file-loader',
+                    options: {
                         name: "[name].[hash].[ext]",
                         outputPath: "images"
                     }
