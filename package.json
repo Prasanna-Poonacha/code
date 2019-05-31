@@ -4,7 +4,8 @@
   "description": "1.\tLet’s talk about Webpack 2.\tSetting up Webpack 3.\tOrganizing Dependencies 4.\tConfiguring Basic Webpack 5.\tUnderstanding Loaders 6.\tCache Busting & Plugins 7.\tConfigure Webpack for Environments 8.\tMore on Loaders/Plugins 9.\tMultiple Entry Points 10.\tMinification & Extraction 11.\tES6 -> ES5 – Setup up Babel",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js"
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,8 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.32.2",
-    "webpack-cli": "^3.3.2"
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1",
+    "webpack-merge": "^4.2.1"
   }
 }
