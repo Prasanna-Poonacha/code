@@ -16,7 +16,7 @@ export class AlertService {
         this.errorBox.innerText = fullMessage;
     };
 
-    hideErrors() {
+    hideErrors = () => {
         this.errorBox.classList.add("invisible");
     };
 }
